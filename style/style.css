@@ -101,6 +101,10 @@ div.user {
     margin-bottom: 20px;
 }
 
+div.user p {
+    margin-top: -20px;
+}
+
 article p {
     text-align: center;
 }
