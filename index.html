@@ -4,34 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Cooking Place</title>
+    <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
 </head>
 <body>
     <header>
-        <h1><img src="imagens/logo-p.png" alt="The Cooking Place Logo"></h1>
+        <h1>
+            <picture>
+                <source media="(max-width: 820px)" srcset="imagens/logo-pp.png">
+                <img src="imagens/logo-p.png" alt="The Cooking Place Logo">
+            </picture>
+        </h1>
         <form action="#" method="get">
-            <input type="search" name="search" id="search" placeholder="&#x1F50D Pesquisa" maxlength="100" size="80">
+            <input type="search" name="search" id="search" placeholder="&#x1F50D Pesquisa">
+            <input type="submit" value="Pesquisar" class="escondido">
         </form>
-        <img src="imagens/camera-icon.png" alt="Ícone de Câmera">
-        <img src="imagens/tiago.jpg" alt="Foto perfil de Tiago">
-    </header>
-    <aside>
         <nav>
-            <ul>
-            <li> <img src="imagens/home-icon.png" alt="Ícone de Página Inicial">Página Principal</li>
-                <li><img src="imagens/messages-icon.png" alt="Ícone de Mensagens"> Mensagens</li>
-                <li><img src="imagens/notifications-icon.png" alt="Ícone de Notificações"> Notificações</li>
-                <li><img src="imagens/question-mark-icon.png" alt="Ícone de Ponto de Interrogação"> O que está a acontecer?</li>
-                <li><img src="imagens/tiago-p.jpg" alt="Foto de perfil de Tiago">Perfil</li>
-            </ul>
+            <img src="imagens/camera-icon.png" alt="Ícone de Câmera" class="direita">
+            <img src="imagens/tiago-p.jpg" alt="Foto perfil de Tiago" class="direita foto-perfil">
         </nav>
-    </aside>
+    </header>
+    <nav id="navegacao">
+        <ul>
+            <li><a href="#"><img src="imagens/home-icon.png" alt="Ícone de Página Inicial"><br>Página Principal</a></li>
+            <li><a href="#"><img src="imagens/messages-icon.png" alt="Ícone de Mensagens"><br>Mensagens</a></li>
+            <li><a href="#"><img src="imagens/notifications-icon.png" alt="Ícone de Notificações"><br>Notificações</a></li>
+            <li><a href="#"><img src="imagens/question-mark-icon.png" alt="Ícone de Ponto de Interrogação"><br>O que está a acontecer?</a></li>
+            <li><a href="#"><img src="imagens/tiago-p.jpg" alt="Foto de perfil de Tiago" class="foto-perfil"><br>Perfil</a></li>
+        </ul>
+    </nav>
     <main>
         <article>
-            <img src="imagens/tiago-p.jpg" alt="Foto perfil de Tiago">
-            <p>Tiago Daniel</p>
+            <div class="user">
+                <img src="imagens/tiago-p.jpg" alt="Foto perfil de Tiago" class="foto-perfil">
+                <p  class="nome">Tiago Daniel</p>
+            </div>
             <img src="imagens/sushi.jpg" alt="Foto de Sushi">
-            <p>
+            <p class="icones">
                 <img src="imagens/hamburger-icon.png" alt="Like Button">
                 <img src="imagens/comment-icon.png" alt="Comment Button">
                 <img src="imagens/share-icon.png" alt="Share Button">
@@ -39,9 +48,12 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ducimus nisi numquam deleniti, eius rerum eveniet. Hic explicabo similique reprehenderit, quis esse sunt mollitia alias quia, optio, aspernatur numquam ipsa.</p>
         </article>
         <article>
-            <img src="imagens/foto-homem.jpg" alt="Foto perfil de Homem">
-            <p>Homem</p>
-            <p>
+            <div class="user">
+                <img src="imagens/foto-homem.jpg" alt="Foto perfil de Homem" class="foto-perfil">
+                <p class="nome">Homem</p>
+            </div>
+            <img src="imagens/bacalhau.jpg" alt="Foto de Sushi">
+            <p class="icones">
                 <img src="imagens/banana-icon.png" alt="Like Button">
                 <img src="imagens/comment-icon.png" alt="Comment Button">
                 <img src="imagens/share-icon.png" alt="Share Button">
@@ -49,9 +61,90 @@
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit dolores in, quasi sunt architecto ut maiores tempore. Cumque aperiam fugit nisi quia dolorum consectetur sunt similique velit asperiores eaque!</p>
         </article>
         <article>
-            <img src="imagens/foto-mulher.jpg" alt="Foto perfil de Mulher">
-            <p>Mulher</p>
-            <p>
+            <div class="user">
+                <img src="imagens/foto-mulher.jpg" alt="Foto perfil de Mulher" class="foto-perfil">
+                <p class="nome">Mulher</p>
+            </div>
+            <img src="imagens/lasanha.jpg" alt="Foto de Sushi">
+            <p class="icones">
+                <img src="imagens/green-apple-icon.png" alt="Like Button">
+                <img src="imagens/comment-icon.png" alt="Comment Button">
+                <img src="imagens/share-icon.png" alt="Share Button">
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati neque quae accusantium dolorum assumenda rerum qui maxime ab, aut id magni ullam provident quasi dolor perspiciatis nobis, quibusdam corrupti odio.</p>
+        </article>
+        <article>
+            <div class="user">
+                <img src="imagens/tiago-p.jpg" alt="Foto perfil de Tiago" class="foto-perfil">
+                <p  class="nome">Tiago Daniel</p>
+            </div>
+            <img src="imagens/sushi.jpg" alt="Foto de Sushi">
+            <p class="icones">
+                <img src="imagens/hamburger-icon.png" alt="Like Button">
+                <img src="imagens/comment-icon.png" alt="Comment Button">
+                <img src="imagens/share-icon.png" alt="Share Button">
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ducimus nisi numquam deleniti, eius rerum eveniet. Hic explicabo similique reprehenderit, quis esse sunt mollitia alias quia, optio, aspernatur numquam ipsa.</p>
+        </article>
+        <article>
+            <div class="user">
+                <img src="imagens/foto-homem.jpg" alt="Foto perfil de Homem" class="foto-perfil">
+                <p class="nome">Homem</p>
+            </div>
+            <img src="imagens/bacalhau.jpg" alt="Foto de Sushi">
+            <p class="icones">
+                <img src="imagens/banana-icon.png" alt="Like Button">
+                <img src="imagens/comment-icon.png" alt="Comment Button">
+                <img src="imagens/share-icon.png" alt="Share Button">
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit dolores in, quasi sunt architecto ut maiores tempore. Cumque aperiam fugit nisi quia dolorum consectetur sunt similique velit asperiores eaque!</p>
+        </article>
+        <article>
+            <div class="user">
+                <img src="imagens/foto-mulher.jpg" alt="Foto perfil de Mulher" class="foto-perfil">
+                <p class="nome">Mulher</p>
+            </div>
+            <img src="imagens/lasanha.jpg" alt="Foto de Sushi">
+            <p class="icones">
+                <img src="imagens/green-apple-icon.png" alt="Like Button">
+                <img src="imagens/comment-icon.png" alt="Comment Button">
+                <img src="imagens/share-icon.png" alt="Share Button">
+            </p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati neque quae accusantium dolorum assumenda rerum qui maxime ab, aut id magni ullam provident quasi dolor perspiciatis nobis, quibusdam corrupti odio.</p>
+        </article>
+        <article>
+            <div class="user">
+                <img src="imagens/tiago-p.jpg" alt="Foto perfil de Tiago" class="foto-perfil">
+                <p  class="nome">Tiago Daniel</p>
+            </div>
+            <img src="imagens/sushi.jpg" alt="Foto de Sushi">
+            <p class="icones">
+                <img src="imagens/hamburger-icon.png" alt="Like Button">
+                <img src="imagens/comment-icon.png" alt="Comment Button">
+                <img src="imagens/share-icon.png" alt="Share Button">
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ducimus nisi numquam deleniti, eius rerum eveniet. Hic explicabo similique reprehenderit, quis esse sunt mollitia alias quia, optio, aspernatur numquam ipsa.</p>
+        </article>
+        <article>
+            <div class="user">
+                <img src="imagens/foto-homem.jpg" alt="Foto perfil de Homem" class="foto-perfil">
+                <p class="nome">Homem</p>
+            </div>
+            <img src="imagens/bacalhau.jpg" alt="Foto de Sushi">
+            <p class="icones">
+                <img src="imagens/banana-icon.png" alt="Like Button">
+                <img src="imagens/comment-icon.png" alt="Comment Button">
+                <img src="imagens/share-icon.png" alt="Share Button">
+            </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio velit dolores in, quasi sunt architecto ut maiores tempore. Cumque aperiam fugit nisi quia dolorum consectetur sunt similique velit asperiores eaque!</p>
+        </article>
+        <article>
+            <div class="user">
+                <img src="imagens/foto-mulher.jpg" alt="Foto perfil de Mulher" class="foto-perfil">
+                <p class="nome">Mulher</p>
+            </div>
+            <img src="imagens/lasanha.jpg" alt="Foto de Sushi">
+            <p class="icones">
                 <img src="imagens/green-apple-icon.png" alt="Like Button">
                 <img src="imagens/comment-icon.png" alt="Comment Button">
                 <img src="imagens/share-icon.png" alt="Share Button">
@@ -59,5 +152,8 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati neque quae accusantium dolorum assumenda rerum qui maxime ab, aut id magni ullam provident quasi dolor perspiciatis nobis, quibusdam corrupti odio.</p>
         </article>
     </main>
+    <footer>
+        <p>The Cooking Place &copy; 2024</p>
+    </footer>
 </body>
 </html>
